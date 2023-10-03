@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -15,17 +15,51 @@
         #table{
             width:100%;
             height:10%;
+            border-width:0px;
         }
+        .SiteNav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        .SiteNav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .SiteNav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .SiteNav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        .SiteNav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 20px;
+        }
+
     </style>
 </head>
 <body>
     <table id="table">
-        <h1 id="QSStation">QS Station</h1>
-        <p id="Home">Home</p>
-        <p id="Featured">Featured</p>
-        <p id="Sale">Sale</p>
-        <p id="Support">Support</p>
-        <p id="Our Store">Our Store</p>
+        <tr>
+          <td class="SiteNav"><h1 id="QSStation">QS Station</h1></td>  
+           <td class="Sitenav"id="Home">Home</td> 
+           <td class="SiteNav"id="Featured">Featured</td> 
+           <td class="SiteNav"id="Products">Products</td> 
+           <td class="SiteNav"id="Support">Support</td> 
+         <td class="SiteNav"id="Our Store">Our Store</td>   
+            <td class="SiteNav"id="Search Bar"><input type="text" placeholder="Search.."></td>
+        </tr>
     </table>
 </body>
 </html>
