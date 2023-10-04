@@ -12,15 +12,18 @@
         body {
             font-size: 20px;
         }
-        #table{
-            width:100%;
-            height:10%;
+        table {
+            width: 100%;
+            height: 10%;
             border-width:0px;
+            background-color:lightgray;
+
         }
-        .SiteNav {
-            overflow: hidden;
-            background-color: #e9e9e9;
+        td{
+            text-align:center;
+            border:hidden;
         }
+       
         .SiteNav a {
             float: left;
             display: block;
@@ -52,13 +55,13 @@
 <body>
     <table id="table">
         <tr>
-          <td class="SiteNav"><h1 id="QSStation">QS Station</h1></td>  
-           <td class="Sitenav"id="Home">Home</td> 
-           <td class="SiteNav"id="Featured">Featured</td> 
-           <td class="SiteNav"id="Products">Products</td> 
-           <td class="SiteNav"id="Support">Support</td> 
-         <td class="SiteNav"id="Our Store">Our Store</td>   
-            <td class="SiteNav"id="Search Bar"><input type="text" placeholder="Search.."></td>
+            <td class="SiteNav"><h1 id="QSStation">QS Station</h1></td> 
+            <td class="SiteNav" id="Home"><a href="">Home</a></td>
+            <td class="SiteNav" id="Featured"><a href="">Featured</a></td>
+            <td class="SiteNav" id="Products"><a href="">Products</a></td>
+            <td class="SiteNav" id="Support"><a href="">Support</a></td>
+            <td class="SiteNav" id="Our Store"><a href="">Our Store</a></td>
+            <td class="SiteNav" id="Search Bar"><input type="text" placeholder="Search.."></td>
         </tr>
     </table>
 </body>
